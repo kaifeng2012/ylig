@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="w12">
+        <div class="logo"><img src="imgs/index/logo.png" alt=""></div>
+        <div class="search-r">
+            <div class="search">
+                <img src="imgs/index/search.png" class="search-icon" alt="">
+                <div class="search-content">
+                    <input type="text" class="search-input" value="请输入您查找的内容">
+                    <!--<select class="search-input">-->
+                    <!--<option value="">请输入您查找的内容</option>-->
+                    <!--<option value="">2222</option>-->
+                    <!--<option value="">6666</option>-->
+                    <!--<option value="">7777</option>-->
+                    <!--</select>-->
+                </div>
+            </div>
+        </div>
+        <ul class="nav-top">
+
+            <li href="">
+                <a href="index.html" class="item">首页</a>
+
+                <dl class="first-arrow">
+                    <dt class="up-arrow" style="left:-5px;">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow.png">
+                            </span>
+                    </dt>
+
+                </dl>
+
+            </li>
+            <li class="yqgk">
+                <a href="aboutPark.html" class="item">园区概况</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="aboutPark.html?type=0">园区简介</a></dd>
+                    <dd><a href="aboutPark.html?type=1">组织机构</a></dd>
+                    <dd><a href="aboutPark.html?type=2">地理位置</a></dd>
+                    <dd><a href="aboutPark.html?type=3">大记事</a></dd>
+                    <dd><a href="aboutPark.html?type=4">创业载体</a></dd>
+                </dl>
+
+            </li>
+            <li class="yqdt">
+                <a href="yqdt.html" class="item">园区动态</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="yqdt.html?type=0">新闻速递</a></dd>
+                    <dd><a href="yqdt.html?type=1">通知公告</a></dd>
+                </dl>
+
+            </li>
+            <li class="rzqy">
+                <a href="rzqy.html" class="item">入驻企业</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="rzqy.html?type=0">入驻流程</a></dd>
+                    <dd><a href="rzqy.html?type=1">资料提供</a></dd>
+                    <dd><a href="rzqy.html?type=2">项目申报</a></dd>
+                    <dd><a href="rzqy.html?type=3">政策法规</a></dd>
+                    <dd><a href="rzqy.html?type=4">园区配套</a></dd>
+                    <dd><a href="rzqy.html?type=5">园区企业</a></dd>
+                    <dd><a href="rzqy.html?type=6">荣誉展示</a></dd>
+                </dl>
+            </li>
+            <li class="fwpt">
+                <a href="fwpt.html" class="item">服务平台</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="fwpt.html?type=0">金融服务</a></dd>
+                    <dd><a href="fwpt.html?type=1">人次招聘服务</a></dd>
+                </dl>
+            </li>
+            <li class="yqdj">
+                <a href="yqdj.html" class="item">园区党建</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="yqdj.html?type=0">组织机构</a></dd>
+                    <dd><a href="yqdj.html?type=1">党建指南</a></dd>
+                    <dd><a href="yqdj.html?type=2">党建动态</a></dd>
+                </dl>
+            </li>
+            <li class="contact">
+                <a href="contactUs.html" class="item">联系我们</a>
+                <dl>
+                    <dt class="up-arrow">
+                            <span class="navline" style="width: 70px; left:629px;">
+                                <img src="imgs/index/arrow1.png">
+                            </span>
+                    </dt>
+                    <dd class="first-font"><a href="contactUs.html?type=0">联系方式</a></dd>
+                    <dd><a href="contactUs.html?type=1">访客留言</a></dd>
+                </dl>
+            </li>
+
+        </ul>
+
+        <!--<span class="navline" style="width: 70px; left:629px;">-->
+        <!--<img src="imgs/index/arrow.png">-->
+        <!--</span>-->
+
+    </div>
+    <script>
+        //$('.nav-top li .first-arrow').show();
+        $('.search-r img').on('click', function () {
+            //alert()
+            $('.nav-top').hide();
+            $('.search-content').show()
+
+
+        });
+       $(".nav-top>li").on('mouseover', function () {
+
+            var $this = $(this);
+
+            itemIndex = $this.index();
+
+            console.log(itemIndex);
+
+
+            $('.nav-top li dl').eq(itemIndex).show();
+
+
+
+           if(itemIndex==0){
+               $('.nav-top li .first-arrow').show();
+           }else{
+               $('.nav-top li .first-arrow').hide();
+           }
+
+        }).on('mouseout', function () {
+            var $this = $(this);
+
+            itemIndex = $this.index();
+
+            console.log(itemIndex);
+
+            $('.nav-top li dl').eq(itemIndex).hide();
+           //$('.nav-top li .first-arrow').show();
+
+           if(itemIndex==0){
+               $('.nav-top li .first-arrow').show();
+           }else{
+               $('.nav-top li .first-arrow').hide();
+           }
+
+        });
+
+
+ </script>
+</body>
+</html>

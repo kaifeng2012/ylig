@@ -1,0 +1,58 @@
+.nav-top li dl dd>a{
+    color:#ffffff;
+}
+
+.nav-top li .first-font>a{
+    /*color:#f1b602;*/
+    text-decoration:none;
+}
+/*悬浮在每个下拉菜单时，字体变色*/
+.nav-top li dl dd>a:hover{
+    color:#f1b602;
+    text-decoration:none;
+}
+.nav-top>li>a{
+    color:#ffffff;
+}
+.search .search-input{
+    color:#ffffff;
+}
+.search .search-input .input::-webkit-input-placeholder {
+    color:#ffffff;
+}
+.search .search-input .input:-moz-placeholder {
+    color:#ffffff;
+}
+.search .search-input .input:-ms-input-placeholder {
+    color:#ffffff;
+}
+
+/*main*/
+
+.main .yq{
+
+}
+.main .qygk{
+    background:#ffffff;
+
+}
+.yq-list h5{
+    color:#000000;
+}
+.yq-list p a{
+    color:#f09800;
+}
+.yq-title dt{
+    color:#000000;
+}
+
+.yq-list .new-list i{
+    background-color:#f09800;
+
+}
+.yq-list .new-list a{
+    color:#999999;
+}
+.yq-detail a{
+    color:#999999;
+}

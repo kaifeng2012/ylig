@@ -1,0 +1,258 @@
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-size:14px;
+    font-family: "microsoft yahei",SimHei,SimSun , Arial, Helvetica, sans-serif;
+    /*background-image: url(../img/bg.png);*/
+    /*background-image: url(../img/bg3.png);*/
+    /*background-repeat: no-repeat;*/
+    /*width:1920px;*/
+    /*height:1080px;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+    /*z-index:10;*/
+    background:#e4e4e4;
+    color:#666666;
+
+}
+ul, li, p, h1, h2, h3, h4, h5, h6, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+a {
+    list-style: none;
+    text-decoration: none;
+}
+/*头部导航*/
+.head{
+    text-align: center;
+    background:#333333;
+    height:100px;
+    line-height:100px;
+    position: relative;
+    width: 100%;
+    z-index: 100;
+}
+.w12{
+    width: 1200px;
+    margin: 0 auto;
+}
+.head .w12 .logo {
+    float: left;
+    /*margin-top: 15px;*/
+}
+.head .w12 .search-r {
+    float: right;
+    height: 84px;
+    margin-left: 10px;
+    position: relative;
+}
+.head .w12 .nav-top {
+    float:left;
+    height: 84px;
+    position: relative;
+    z-index: 10;
+    left: 98px;
+}
+.head .w12 .nav-top>li {
+    /*padding: 0 30px 0 30px;*/
+    float: left;
+    background: url(../images/nav-li.png) no-repeat right center;
+    width:116px;
+
+}
+
+.nav-top li dl{
+    display:none;
+    /*float:left;*/
+    /*margin-left:-14px;*/
+    background:rgba(0,0,0,0.7);
+    width:126px
+
+}
+.nav-top li:hover dl{
+    display:block;
+}
+.nav-top li .first-arrow{
+    display:block;
+    background:transparent;
+
+}
+.nav-top li dl dt{
+    /*display:none;*/
+    /*display:inline-block;*/
+    /*width:5%;*/
+    height:28px;
+
+    /*width:126px;*/
+    position: relative;
+    top: -28px;
+
+}
+.nav-top li dl dd{
+    /*display:none;*/
+    /*background:rgba(0,0,0,0.7);*/
+    position: relative;
+    top:22px;
+    height: 28px;
+
+}
+.nav-top li dl dd>a{
+    display: inline-block;
+    position: relative;
+    top: -34px;
+    font-size:12px;
+}
+.nav-top{
+    display:inline-block;
+    text-align:center;
+}
+.search{
+    float:right;
+}
+.search .search-icon{
+    position: relative;
+    /* padding-right: 10px; */
+    right: 10px;
+}
+.search .search-input{
+    height:35px;
+    width: 957px;
+    /* margin-left: 30px; */
+    position: relative;
+    left: 25px;
+    z-index: -1;
+    background: transparent;
+
+    padding-left: 13px;
+    /* padding-right: 10px; */
+    border: 1px solid #fff;
+    font-size:12px;
+    border-radius:4px;
+}
+
+.head-nav{
+
+}
+.search-content{
+    display:none;
+    float: left;
+}
+.logo{
+    float:left;
+    /*position: relative;*/
+    /*left: 23%;*/
+}
+.search-r{
+    float:right;
+    position: relative;
+    /*right:28%;*/
+}
+
+/*.head-nav .navline{*/
+/*position: absolute;*/
+/*width: 0;*/
+/*height: 4px;*/
+/*padding-bottom: 3px;*/
+/*background: url(../imgs/index/arrow.png) repeat-x center center;*/
+/*bottom:11px;*/
+/*left: 15px;*/
+/**/
+/*}*/
+.head-nav .navline {
+    /*position: absolute;*/
+    /*width: 0;*/
+    /*height: 4px;*/
+    /*padding-bottom: 3px;*/
+    /*background: url(../imgs/index/arrow1.png) repeat-x center center;*/
+    /*bottom: 0;*/
+    /*left: 15px;*/
+    /*display:none;*/
+}
+.head-nav .navline img {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top:18px;
+    width:50%;
+}
+.first-arrow .navline img{
+    /*height: 28px; */
+    /* background: rgba(0,0,0,0.7); */
+    /* width: 126px; */
+    position: relative;
+    top: 0px;
+    left: 2px;
+    width: 29%;
+}
+.nav-top li dl .up-arrow{
+    background:transparent;
+    height:28px;
+    /*background:rgba(0,0,0,0.7);*/
+    /*width:126px;*/
+    position:relative;
+    top:-16px;
+    /*left:-5px;*/
+}
+
+.navline img{
+    width:48%;
+}
+.nav-top li a{
+    text-decoration: none;
+}
+.AQ{
+
+    height:75px;
+    line-height:75px;
+    margin-top:-22px;
+}
+.AQ li{
+    float:left;
+    margin-left:26px;
+}
+.AQ .hotline{
+    float:right;
+    margin-right:26px;
+}
+
+/*底部导航*/
+
+.foot{
+    clear:both;
+    position: relative;
+    top: 15px;
+}
+.nav-bottom li{
+    float:left;
+    width:7%;
+    margin-top:2%;
+    margin-left:5%;
+}
+.foot .logo{
+    float: left;
+    margin-left:5%;
+    margin-top:2%;
+}
+.foot .nav-bottom li a{
+    color:#666666;
+    text-decoration:none;
+}
+.foot .nav-bottom li p{
+    height:24px;
+}
+.foot .foot-nav{
+    background: #333333;
+    height: 230px;
+    clear: both;
+}
+

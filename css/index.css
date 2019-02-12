@@ -1,0 +1,100 @@
+.nav-top>li{
+    display:inline-block;
+    /*padding:0 17px 0 16px;*/
+    width:5%;
+}
+
+.nav-top li ul{
+    display:none;
+    float:left;
+    margin-left:-14px;
+
+}
+.nav-top li .first-arrow{
+    display:block;
+
+}
+.nav-top li ul li{
+    /*display:none;*/
+    /*display:inline-block;*/
+    /*width:5%;*/
+    height:28px;
+    background:rgba(0,0,0,0.7);
+    width:126px;
+    position: relative;
+    top: -28px;
+
+}
+.nav-top li ul li>a{
+    display: inline-block;
+    position: relative;
+    top: -34px;
+    font-size:12px;
+
+}
+.nav-top{
+    display:inline-block;
+    text-align:center;
+    width:100%;
+}
+.search{
+    float:right;
+}
+.head-nav{
+    text-align: center;
+    background:#333333;
+    height:100px;
+    line-height:100px;
+    position: relative;
+
+}
+.search-content{
+    display:none;
+
+}
+.logo{
+   float:left;
+    position: relative;
+    left: 23%;
+}
+.search-r{
+    float:right;
+    position: relative;
+    right:28%;
+}
+
+/*.head-nav .navline{*/
+    /*position: absolute;*/
+    /*width: 0;*/
+    /*height: 4px;*/
+    /*padding-bottom: 3px;*/
+    /*background: url(../imgs/index/arrow.png) repeat-x center center;*/
+    /*bottom:11px;*/
+    /*left: 15px;*/
+   /**/
+/*}*/
+.head-nav .navline {
+    /*position: absolute;*/
+    /*width: 0;*/
+    /*height: 4px;*/
+    /*padding-bottom: 3px;*/
+    /*background: url(../imgs/index/arrow1.png) repeat-x center center;*/
+    /*bottom: 0;*/
+    /*left: 15px;*/
+    /*display:none;*/
+}
+.head-nav .navline img {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top:18px;
+    width:50%;
+}
+.first-arrow .navline img{
+    width:25%;
+    top:19px;
+}
+.nav-top li ul .up-arrow{
+    background:transparent;
+}
+
